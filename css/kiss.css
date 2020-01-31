@@ -1,0 +1,161 @@
+ * {
+    font-family:sans-serif;
+ }
+ 
+ 
+ #hback {
+    background-color: grey;
+    display:grid;
+    grid-template-columns: 2fr 3fr 3fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "Menu Logo . Car Person Review Job Contact";
+    height:6rem;
+    background-color:#aeaeae;
+
+}
+.Car {
+    grid-area:Car;
+    color:#81007f
+}
+.Person {
+    grid-area:Person;
+    color:#81007f
+}
+.Review {
+    grid-area:Review;
+    color:#81007f
+}
+.Job {
+    grid-area:Job;
+    color:#81007f
+}
+.Contact {
+    grid-area:Contact;
+    color:#81007f;
+}
+.material-icons {
+    font-size:6rem !important;
+    margin-top:1rem;;}
+.menu{
+    grid-area:Menu;
+    color:white !important;
+    background-color:#81007f !important;
+    margin-top:-2rem;
+    margin-right:0.7rem !important;
+    
+
+}
+#logo {
+grid-area:Logo;
+height:6rem;
+}
+a.sidenav-trigger.Menu{
+    background-color: #81007f;
+    padding:3rem;
+    margin-left:-0.1rem;
+    margin-right:3rem !important;
+
+    
+}
+@media only screen and (min-width: 993px){
+nav a.sidenav-trigger {
+    display:block !important;
+}}
+#cars {
+    width:100%;
+}
+#maintext {
+    display:flex;
+    justify-content: center;
+    font-size:50px;
+    margin-left:10%;
+    margin-right:10%;
+    text-align:center;
+    
+    
+
+}
+ul:not(.browser-default)>li {
+    list-style-type:disc !important;
+}
+
+#bullets {
+     
+    
+    font-size:3rem !important;
+    margin-left:34%;
+    margin-right:34%
+ 
+}
+#Homeside {
+    font-size:30px !important;
+}
+#clear {
+    font-size:3rem !important;
+    margin-left:0. !important;
+    margin-top:-0.8rem;
+}
+.black-text {
+    font-size:1.5rem !important;
+    margin-top:1rem;
+
+}
+.btn {
+    width:33%;
+    margin-left:33% !important;
+    margin-right:33% !important;
+    font-size:3rem !important;
+    padding-left:2% !important;
+    padding-right:2% !important;
+    padding-top: 1% !important;
+    padding-bottom:2.5% !important;
+    margin-bottom:2rem;
+}
+.book {
+   background-color:#81007f !important;
+
+}
+.more {
+    background-color:#3587ce !important;
+}
+.divider {
+    height:0.2rem !important;
+    background-color:#837f81 !important;
+    margin-top:1rem !important;
+    margin-bottom:1rem !important;
+    margin-right:2rem;
+    margin-left:2rem;
+}
+.number {
+    margin-left:38%;
+    margin-right:38%;
+    font-size:2rem !important;
+    color:#837f81 !important;
+} 
+#social {
+    margin-left: 41% !important;
+    margin-left:41% !important;
+    color:#837f81 !important;
+    font-size:2rem !important;
+}
+#facebook {
+    height:72px !important;
+    border-radius:20% !important;
+    margin-left:43.4% !important;
+    display:inline;
+
+}
+#instagram {
+    height:72px !important;
+    border-radius:20% !important;
+    margin-left:2% !important;
+    display:inline;
+
+}
+#copyright {
+    margin-left:19% !important;
+    margin-right:15% !important;
+    font-size:2rem !important;
+    color:#837f81 !important;
+}
