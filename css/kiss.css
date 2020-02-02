@@ -14,25 +14,43 @@
     background-color:#aeaeae;
 
 }
+.cara {
+    grid-area:Car
+}
 .Car {
-    grid-area:Car;
+    
     color:#81007f
+}
+.persona {
+    grid-area:Person
 }
 .Person {
-    grid-area:Person;
+   
     color:#81007f
+}
+.reviewa {
+    grid-area:Review;
 }
 .Review {
-    grid-area:Review;
+    
     color:#81007f
+}
+.joba {
+    grid-area:Job;
 }
 .Job {
-    grid-area:Job;
+    
     color:#81007f
 }
-.Contact {
+.contacta {
     grid-area:Contact;
+}
+.Contact {
+   
     color:#81007f;
+}
+.logoa {
+    grid-area:Logo;
 }
 .material-icons {
     font-size:6rem !important;
@@ -58,6 +76,13 @@ a.sidenav-trigger.Menu{
 
     
 }
+#lessondrop {
+    margin-left:-0.8rem !important;
+}
+.drop {
+    color:#81007f !important;
+    background-color: #959192 !important;
+}
 @media only screen and (min-width: 993px){
 nav a.sidenav-trigger {
     display:block !important;
@@ -76,16 +101,27 @@ nav a.sidenav-trigger {
     
 
 }
-ul:not(.browser-default)>li {
+#b1 {
+    list-style-type:disc !important;
+}
+#b2 {
     list-style-type:disc !important;
 }
 
+#b3 {
+    list-style-type:disc !important;
+}
+
+#b4 {
+    list-style-type:disc !important;
+}
 #bullets {
      
     
     font-size:3rem !important;
     margin-left:34%;
-    margin-right:34%
+    margin-right:34%;
+    list-style-type:disc !important;
  
 }
 #Homeside {
@@ -134,15 +170,15 @@ ul:not(.browser-default)>li {
     color:#837f81 !important;
 } 
 #social {
-    margin-left: 41% !important;
-    margin-left:41% !important;
+    margin-left: 42% !important;
+    margin-right:35% !important;
     color:#837f81 !important;
     font-size:2rem !important;
 }
 #facebook {
     height:72px !important;
     border-radius:20% !important;
-    margin-left:43.4% !important;
+    margin-left:44.4% !important;
     display:inline;
 
 }
@@ -158,4 +194,86 @@ ul:not(.browser-default)>li {
     margin-right:15% !important;
     font-size:2rem !important;
     color:#837f81 !important;
+}
+#lhead {
+    font-size:7rem;
+    margin-top:6rem !important;
+    margin-left: 32% !important;
+    margin-right:30% !important;
+    font-family:sans-serif;
+    margin-bottom:6rem;
+}
+#prices {
+    margin-top:8rem !important;
+    font-size:6rem !important;
+    margin-left:44.2% !important;
+}
+#lessfoot {
+    display:grid;
+    grid-template-columns:1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows:3fr 3fr ;
+    grid-template-areas:
+     ". CD E-learn Pass-Plus ."
+     ". Mydrive Store DVSA .";
+}
+#CD {
+    grid-area:CD;
+    margin-bottom:-8rem;
+    
+    border-right:0.5rem solid black !important;
+    margin-left:4rem;
+    height:20rem;
+   
+}
+#CEED {
+    height:16rem;
+    margin-left:9rem;
+    margin-top:1rem;
+    
+}
+#E-learn {
+    grid-area:E-learn;
+    display:flex;
+    justify-content: center;
+   
+    color:#81007f !important;
+    font-size:4rem;
+    border-right:0.5rem solid black !important;
+}
+#pass-plus {
+    grid-area:Pass-Plus;
+    display:flex;
+    justify-content: center;
+
+}
+#MyDrive {
+    grid-area:Mydrive;
+   
+    height:200px !important;
+    
+    border-top: 0.5rem solid black !important;
+    border-right:0.5rem solid black !important;
+
+}
+#mid {
+    margin-left:11.6rem !important;
+}
+#Store {
+    grid-area:Store;
+    display:flex;
+    justify-content: center;
+    height:14rem;
+
+    border-top: 0.5rem solid black !important;
+    border-right:0.5rem solid black !important;
+}
+#DVSA {
+    grid-area:DVSA;
+    display:flex;
+    justify-content: center;
+    height:12rem;
+    
+    border-top: 0.5rem solid black !important;
+    
+
 }
