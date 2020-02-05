@@ -1,3 +1,4 @@
+//-----------------------divider
 var div = document.createElement("div")
 div.classList.add("divider")
 
@@ -105,8 +106,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var instances = M.Sidenav.init(elems);
     var collapsibleElem = document.querySelector('.collapsible');
     var collapsibleInstance = M.Collapsible.init(collapsibleElem);
+
+});
+//-------------------collapsible(materialize)
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
 });
 
+//-----------------------------------main page
 function mainpage() {
     //-----------------------Car image
     var imd = document.createElement("div");
@@ -116,7 +124,7 @@ function mainpage() {
     image.src = "https://www.kissdrivingschool.com/files/kiss-driving-school-instructors.jpg"
     imd.appendChild(image);
 
-
+    //------------------------------body
     var maintext = document.createElement("p")
     maintext.id = "maintext"
     maintext.innerHTML = "KISS Driving School has over 80 driving instructors who provide driving lessons mainly in the South of England. "
@@ -149,21 +157,21 @@ function mainpage() {
 
 
     imd.appendChild(bullets)
-
+    //---------------------------------button
     var more = document.createElement("a")
     more.classList.add("waves-effect", "waves-light", "btn", "centre-align", "white-text", "more")
     more.href = "kisslesson.html"
     more.innerHTML = "MORE ABOUT LESSONS"
 
     imd.appendChild(more)
-
+    //-----------------------------------button
     var book = document.createElement("a")
     book.classList.add("waves-effect", "waves-light", "btn", "centre-align", "white-text", "book")
     book.innerHTML = "FIND AN INSTRUCTOR"
     book.href = "kisspeople.html"
 
     imd.appendChild(book)
-
+    //----------------------footer area
     var number = document.createElement("p")
     number.classList.add("number")
     number.innerHTML = "07760 754517 / 0845 245 0405"
@@ -203,7 +211,7 @@ function lessons() {
     lhead.id = "lhead"
     lhead.innerHTML = "Driving Lessons"
     document.querySelector("#holder").appendChild(lhead)
-
+    //-----------------------------------body
     var maintext = document.createElement("p")
     maintext.id = "maintext"
     maintext.innerHTML = "KISS Driving Lessons are much more intensive than driving lessons with AA, BSM, RED, LDC and other driving schools. You could save as much as 60% on learning to drive as our driving lessons are well structured and will meet your personal needs. Our driving instructors teach as fast as you can learn, can you learn as fast as they can teach?<br><br>We have and continue to train literally hundreds of driving instructors throughout London and the South East over the last 10 years. Use our instructor’s locator map by clicking the link below to find your nearest driving instructor to you."
@@ -220,7 +228,7 @@ function lessons() {
     pricetext.innerHTML = "Lesson prices vary depending on area and if you require manual or automatic lessons. Feel free to contact Instructors direct as they will be able to offer their best price for lessons depending on your availability and how many lessons you wish to book.<br><br>Most of the Instructors are happy to offer good block booking discounts when you prepay for lessons. Complete beginners to driving should be able to secure a competitive rate for their first lessons and the Instructor can again make an offer if you give them a call direct.<br><br> For people who have driven before but are not yet ready for the test, we offer the first 90 - minute session for £30 which allows your driving instructor to assess your driving skills.During this driving lesson, you will be given feedback and coached to suit your level of ability.You will also be guided as to how many more driving lessons you are likely to need for success in your practical driving test."
     document.querySelector("#holder").appendChild(pricetext);
 
-
+    //------button
     var book = document.createElement("a")
     book.classList.add("waves-effect", "waves-light", "btn", "centre-align", "white-text", "book")
     book.innerHTML = "FIND AN INSTRUCTOR"
@@ -234,7 +242,7 @@ function lessons() {
     document.querySelector("#holder").appendChild(number)
 
     document.querySelector("#holder").appendChild(div)
-
+    //--------------------------------------------footer
     var lessfoot = document.createElement("div")
     lessfoot.id = "lessfoot"
 
@@ -304,16 +312,164 @@ function lessons() {
     document.querySelector('#holder').appendChild(lessfoot)
 
 
+}
+//------------------------Instructor page title
+function people() {
+    var title = document.createElement("h1")
+    title.classList.add("instructors")
+    title.innerHTML = "Instructors"
+
+    document.querySelector("#holder").appendChild(title)
+
+    var sub = document.createElement("p")
+    sub.classList.add("look")
+    sub.innerHTML = "Search for a KISS Driving Instructor"
+
+    document.querySelector("#holder").appendChild(sub)
 
 
 
 
+}
+//---------------------------name search box
+function searchname() {
+    var droph = document.querySelector("#droph")
+    document.querySelector("#holder").appendChild(droph)
+
+    var instructors = [{ "name": "Alex Cross", "phone": "0000 0000", "car": "Honda" },
+    { "name": "Millie Burne", "phone": "0000 0001", "car": "Ford" },
+    { "name": "John Doe", "phone": "0000 0002", "car": "Citroen" },
+    { "name": "Phil Elms", "phone": "0000 0003", "car": "Subaru" },
+    { "name": "Michael Gent", "phone": "0000 0004", "car": "Lexus" },
+    { "name": "Ernie Shun", "phone": "0000 0005", "car": "Mercedes" },
+    { "name": "Terry Smith", "phone": "0000 0006", "car": "Citroen" }]
+
+    for (i = 0; i < 7; i++) {
+        var link = document.createElement("a")
+        link.href = "kiss" + instructors[i].name + ".html"
+
+
+
+        var card = document.createElement("div")
+        card.classList.add("card")
+        card.id = i
+        card.innerHTML = instructors[i].name
 
 
 
 
+        var phone = document.createElement("p")
+        phone.innerHTML = "Phone:" + instructors[i].phone
+
+        var car = document.createElement("p")
+        car.innerHTML = "Car:" + instructors[i].car
+
+        link.appendChild(card)
+
+        card.appendChild(phone)
+        card.appendChild(car)
+
+        console.log("string")
+
+        document.querySelector("#searchb").appendChild(link)
+
+
+    };
+
+
+}
+
+//----------------------name search
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+
+    input = document.getElementById("searchname");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("searchb");
+    li = ul.getElementsByTagName("a");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("div")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
 
 
 
+//--------------------------------postcode search box
 
+function searchpostcode() {
+    var droph2 = document.querySelector("#droph2")
+    document.querySelector("#holder").appendChild(droph2)
+
+    var instructors = [{ "name": "Alex Cross", "phone": "0000 0000", "car": "Honda", "postcode": "sp2" },
+    { "name": "Millie Burne", "phone": "0000 0001", "car": "Ford", "postcode": "sp1" },
+    { "name": "John Doe", "phone": "0000 0002", "car": "Citroen", "postcode": "sp3" },
+    { "name": "Phil Elms", "phone": "0000 0003", "car": "Subaru", "postcode": "zx8" },
+    { "name": "Michael Gent", "phone": "0000 0004", "car": "Lexus", "postcode": "fr4" },
+    { "name": "Ernie Shun", "phone": "0000 0005", "car": "Mercedes", "postcode": "tt1" },
+    { "name": "Terry Smith", "phone": "0000 0006", "car": "Citroen", "postcode": "sp2" }]
+
+    for (i = 0; i < 7; i++) {
+        var link = document.createElement("a")
+        link.href = "kiss" + instructors[i].name + ".html"
+
+
+
+        var card = document.createElement("div")
+        card.classList.add("card")
+        card.id = i
+        card.innerHTML = instructors[i].postcode
+
+
+        var name = document.createElement("p")
+        name.innerHTML = instructors[i].name
+
+        var phone = document.createElement("p")
+        phone.innerHTML = "Phone:" + instructors[i].phone
+
+        var car = document.createElement("p")
+        car.innerHTML = "Car:" + instructors[i].car
+
+        link.appendChild(card)
+        card.append(name)
+        card.appendChild(phone)
+        card.appendChild(car)
+
+        console.log("string")
+
+        document.querySelector("#searchb2").appendChild(link)
+
+
+    };
+    document.querySelector('#holder').appendChild(div)
+    var none = document.createElement("p")
+    none.innerHTML = "Can't find an instructor close to you? Phone 07760 754517."
+    none.classList.add("none1")
+
+    document.querySelector("#holder").appendChild(none)
+
+}//---------------------------postcode search
+function myFunction2() {
+    var input, filter, ul, li, a, i, txtValue;
+
+    input = document.getElementById("searchname2");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("searchb2");
+    li = ul.getElementsByTagName("a");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("div")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
 }

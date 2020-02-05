@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-<body onload=head(),people()>
+<body onload=head(),people(),searchname(),searchpostcode()>
     <!--Sidenav html-->
     <main id="holder">
 
@@ -51,6 +51,26 @@
         </ul>
         <!--menu button-->
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons menu">menu</i></a>
+        <!--search boxes-->
+        <ul class="collapsible" id="droph">
+            <li id="s1">
+                <div class="collapsible-header" id="searchdrop">Search By Name<i
+                        class="material-icons arrow">arrow_drop_down</i></div>
+                <div class="collapsible-body" id="searchb">
+                    <input type="text" id="searchname" onkeyup=myFunction() placeholder="Search here...">
+            </li>
+        </ul>
+
+        <ul class="collapsible" id="droph2">
+            <li>
+                <div class="collapsible-header two" id="searchdrop2">Search By Postcode<i
+                        class="material-icons arrow2">arrow_drop_down</i></div>
+                <div class="collapsible-body" id="searchb2">
+                    <input type="text" id="searchname2" onkeyup=myFunction2() placeholder="Search here...">
+            </li>
+
+        </ul>
+        <!--end of boxes-->
     </main>
 </body>
 <script src="js/kiss-js.js"></script>
