@@ -384,3 +384,58 @@ margin-left:-3rem;
     font-size:2rem;
 
 }
+#starbox {
+    background-color:#aeaeae;
+    margin-top:5%;
+    border-radius:5rem;
+    display:Grid;
+    grid-template-columns:1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: ". 5star . 4star . 3star . 2star . 1star";
+    margin-left:10%;
+    margin-right:10%;
+}
+#fivestar {
+    width:35vh;
+   
+}
+#fourstar {
+    width:35vh;
+}
+#threestar {
+   
+    width:35vh;
+}
+#twostar {
+    margin-top:0.2rem;
+    width:35vh;
+    margin-top:11px;
+}
+#onestar {
+    width:35vh;
+    border-radius:3rem;
+    margin-top:6px;
+}
+#reviewbox {
+    border:1rem solid black !important;
+    background-color:#aeaeae !important;
+    height:70vh !important; 
+    margin-left:10% !important;
+    margin-right:10% !important;
+    overflow:scroll !important;
+}
+.quotetext {
+    font-size:1.5rem !important;
+    font-family:Neue Haas Grotesk Text Pro Bold;
+    font-style:italic;
+
+}
+.quoter {
+    font-size:1.2rem;
+    font-family:Neue Haas Grotesk Text Pro Bold;
+    text-align:right;
+    
+}
+.boxq {
+    display:block;
+}

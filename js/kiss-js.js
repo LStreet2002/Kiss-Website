@@ -473,3 +473,103 @@ function myFunction2() {
         }
     }
 }
+
+
+function reviews() {
+    var starbox = document.createElement("div")
+    starbox.id = "starbox"
+
+    var stars = [
+        { "name": "fivestar", "src": "pics/5star.png" },
+        { "name": "fourstar", "src": "pics/4star.png" },
+        { "name": "threestar", "src": "pics/3star.png" },
+        { "name": "twostar", "src": "pics/2star.png" },
+        { "name": "onestar", "src": "pics/1star.png" }]
+
+    for (i = 0; i < 5; i++) {
+        var link = document.createElement("a")
+
+
+
+
+        link.href = "#"
+
+        var star = document.createElement("img")
+        star.src = stars[i].src
+        star.classList.add("star")
+        star.id = stars[i].name
+        star.onclick =
+            function filter(f) {
+                var box = document.getElementById("reviewbox")
+                var r = box.getElementsByTagName("div");
+
+                var name = document.getElementsByClassName(f.target.id);
+                console.log(name)
+                for (i = 0; i < name.length; i++){
+                    name[i].style.display = "none"}
+
+
+
+
+
+
+
+
+
+                console.log(r)
+                console.log(box)
+                console.log(name)
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+        link.appendChild(star)
+        starbox.appendChild(link)
+
+        document.querySelector("#holder").appendChild(starbox)
+
+    }
+    var reviews = document.createElement("main")
+    reviews.id = "reviewbox"
+
+
+
+    var quotes = [{ "name": "John Smith", "age": "27", "class": "fivestar", "quote": "I was very satisfied and enjoyed my lessons with Sue, she was extremely supportive and was reliable. I learnt quickly and passed first time. Very thankful." },
+    { "name": "Phil Dimms", "age": "42", "class": "fourstar", "quote": "My first impression of Nick was that his car was rather messy and I was worried this would reflect on him as a teacher, but after a few lessons this didn't bother me as Nick was patient and able to help me with my anxiety around driving and the driving test, he never made me feel stupid or afraid to mess up which has made me so much more confident at driving. With my previous instructor I would dread my driving lessons because I was so hard on myself to be good at everything but Nick is so laid back that I actually started to enjoy my lessons and became less worried about failure." },
+    { "name": "Sam Simp", "age": "18", "class": "threestar", "quote": "I highly recommend my instructor Gary Foster. He is very professional. The guidance received from Gary will benefit the whole life driving. Thank you very much Gary." },
+    { "name": "David Turst", "age": "28", "class": "twostar", "quote": "Can’t recommend Roshni enough as a driving instructor, she is very welcoming, friendly, patient and supportive, I couldn’t have passed without her encouragement and help." },
+    { "name": "Tom Norps", "age": "24", "class": "onestar", "quote": "Michal is a great driving instructor, I enjoyed being taught by him and he helped become an able and confident driver. Would highly recommend Michal to anyone, thanks to him I passed first time." }]
+
+    for (i = 0; i < 5; i++) {
+        var box = document.createElement("div")
+
+        box.classList.add(quotes[i].class)
+
+        var quote = document.createElement("p")
+        quote.innerHTML = '"' + quotes[i].quote + '"'
+        quote.classList.add("quotetext")
+
+
+        var quoter = document.createElement("p")
+        quoter.innerHTML = quotes[i].name + "," + quotes[i].age
+        quoter.classList.add("quoter")
+
+        box.appendChild(quote)
+        box.appendChild(quoter)
+
+        reviews.appendChild(box)
+    }
+
+
+    document.querySelector("#holder").appendChild(reviews)
+
+}
