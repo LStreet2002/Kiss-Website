@@ -393,7 +393,9 @@ margin-left:-3rem;
     grid-template-rows: 2fr;
     grid-template-areas: ". 5star . 4star . 3star . 2star . 1star";
     margin-left:10%;
-    margin-right:10%;
+    margin-right:9%;
+    
+    
 }
 #fivestar {
     width:35vh;
@@ -412,12 +414,13 @@ margin-left:-3rem;
     margin-top:11px;
 }
 #onestar {
-    width:35vh;
-    border-radius:3rem;
-    margin-top:6px;
+    width:33vh;
+    border-radius:4rem;
+    margin-top:8px;
+
 }
 #reviewbox {
-    border:1rem solid black !important;
+    border:0.4rem solid black !important;
     background-color:#aeaeae !important;
     height:70vh !important; 
     margin-left:10% !important;
@@ -438,4 +441,129 @@ margin-left:-3rem;
 }
 .boxq {
     display:block;
+}
+
+#fdiv {
+background-color:#afafaf;
+margin-left:10%;
+margin-right:10%;
+margin-top:10%;
+border-radius:2rem;
+height:80vh;
+
+
+
+}
+#top {
+    height:10vh;
+background-color: #81007f;
+color:white;
+font-size:4rem;
+
+border-radius:1rem;
+
+}
+#searchn {
+    background-color:white;
+   margin-right:10%;
+    width:75vh;
+    margin-top:-5% !important;
+    border-bottom:none !important;
+    float:right;
+   
+    
+}
+#n {
+    font-size:2rem;
+    
+}
+#a {
+    
+    font-size:2rem
+    
+}
+#f {
+    font-size:2rem;
+}
+#searchm {
+    background-color:white;
+    margin-right:10%;
+     width:75vh;
+     margin-top:-4% !important;
+     border-bottom:none !important;
+     float:right;
+    
+}
+#searchf {
+    background-color:white;
+    margin-right:10%;
+     width:75vh;
+     margin-top:-4% !important;
+     border-bottom:none !important;
+     float:right;
+     height:30vh;
+    
+}
+.submit {
+    width:40%;
+    margin-top:4%;
+    background-color: #81007f !important;
+    border-radius:2rem !important;
+}
+#stardiv {
+    display:grid;
+    grid-template-columns:1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 2fr;
+   
+    width:90%;
+}
+#fivestar {
+   
+   border-radius: 2.9rem;
+   
+}
+.titlep {
+text-align:center;
+font-size:80px;
+margin-left:10%;
+margin-right:10%;
+}
+.inst {
+    text-align:center;
+    margin-left:10%;
+    height:24rem;
+
+display:inline;
+   
+}
+.car {
+    text-align:center;
+    display:inline;
+    margin-right:10%;
+    height:24rem;
+    margin-left:31%;
+}
+.quot {
+    text-align:center;
+    font-size:30px !important;
+    margin-left:10%;
+margin-right:10%;
+}
+.brief {
+    text-align:center;
+    font-size:30px !important;
+    margin-left:10%;
+margin-right:10%;
+}
+.specs {
+    text-align:center;
+    font-size:30px !important;
+    margin-left:10%;
+margin-right:10%;
+}
+.final {
+    text-align:center;
+    font-size:30px !important;
+    margin-left:10%;
+margin-right:10%;
 }

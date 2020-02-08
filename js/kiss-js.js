@@ -474,8 +474,16 @@ function myFunction2() {
     }
 }
 
-
+var quotes = [{ "name": "John Smith", "age": "27", "class": "fivestar", "quote": "I was very satisfied and enjoyed my lessons with Sue, she was extremely supportive and was reliable. I learnt quickly and passed first time. Very thankful." },
+{ "name": "Phil Dimms", "age": "42", "class": "fourstar", "quote": "My first impression of Nick was that his car was rather messy and I was worried this would reflect on him as a teacher, but after a few lessons this didn't bother me as Nick was patient and able to help me with my anxiety around driving and the driving test, he never made me feel stupid or afraid to mess up which has made me so much more confident at driving. With my previous instructor I would dread my driving lessons because I was so hard on myself to be good at everything but Nick is so laid back that I actually started to enjoy my lessons and became less worried about failure." },
+{ "name": "Sam Simp", "age": "18", "class": "threestar", "quote": "I highly recommend my instructor Gary Foster. He is very professional. The guidance received from Gary will benefit the whole life driving. Thank you very much Gary." },
+{ "name": "David Turst", "age": "28", "class": "twostar", "quote": "Can’t recommend Roshni enough as a driving instructor, she is very welcoming, friendly, patient and supportive, I couldn’t have passed without her encouragement and help." },
+{ "name": "Tom Norps", "age": "24", "class": "onestar", "quote": "Michal is a great driving instructor, I enjoyed being taught by him and he helped become an able and confident driver. Would highly recommend Michal to anyone, thanks to him I passed first time." }]
+//----------------------------reviews page
 function reviews() {
+    var titlet = document.createElement("h1")
+    titlet.classList.add("instructors")
+    titlet.innerHTML = "Testimonials"
     var starbox = document.createElement("div")
     starbox.id = "starbox"
 
@@ -486,7 +494,7 @@ function reviews() {
         { "name": "twostar", "src": "pics/2star.png" },
         { "name": "onestar", "src": "pics/1star.png" }]
 
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < stars.length; i++) {
         var link = document.createElement("a")
 
 
@@ -505,36 +513,26 @@ function reviews() {
 
                 var name = document.getElementsByClassName(f.target.id);
                 console.log(name)
-                for (i = 0; i < name.length; i++){
-                    name[i].style.display = "none"}
 
+                for (i = 0; i < r.length; i++) {
+                    r[i].style.display = "none"
+                }
+                for (i = 0; i < name.length; i++) {
 
-
-
-
-
-
+                    name[i].style.display = ""
+                }
 
 
                 console.log(r)
                 console.log(box)
                 console.log(name)
 
-
-
-
-
-
             }
-
-
-
-
-
 
         link.appendChild(star)
         starbox.appendChild(link)
 
+        document.querySelector("#holder").appendChild(titlet)
         document.querySelector("#holder").appendChild(starbox)
 
     }
@@ -543,11 +541,7 @@ function reviews() {
 
 
 
-    var quotes = [{ "name": "John Smith", "age": "27", "class": "fivestar", "quote": "I was very satisfied and enjoyed my lessons with Sue, she was extremely supportive and was reliable. I learnt quickly and passed first time. Very thankful." },
-    { "name": "Phil Dimms", "age": "42", "class": "fourstar", "quote": "My first impression of Nick was that his car was rather messy and I was worried this would reflect on him as a teacher, but after a few lessons this didn't bother me as Nick was patient and able to help me with my anxiety around driving and the driving test, he never made me feel stupid or afraid to mess up which has made me so much more confident at driving. With my previous instructor I would dread my driving lessons because I was so hard on myself to be good at everything but Nick is so laid back that I actually started to enjoy my lessons and became less worried about failure." },
-    { "name": "Sam Simp", "age": "18", "class": "threestar", "quote": "I highly recommend my instructor Gary Foster. He is very professional. The guidance received from Gary will benefit the whole life driving. Thank you very much Gary." },
-    { "name": "David Turst", "age": "28", "class": "twostar", "quote": "Can’t recommend Roshni enough as a driving instructor, she is very welcoming, friendly, patient and supportive, I couldn’t have passed without her encouragement and help." },
-    { "name": "Tom Norps", "age": "24", "class": "onestar", "quote": "Michal is a great driving instructor, I enjoyed being taught by him and he helped become an able and confident driver. Would highly recommend Michal to anyone, thanks to him I passed first time." }]
+
 
     for (i = 0; i < 5; i++) {
         var box = document.createElement("div")
@@ -571,5 +565,120 @@ function reviews() {
 
 
     document.querySelector("#holder").appendChild(reviews)
+
+}
+function reviewadd() {
+    var top = document.createElement("div")
+    top.id = "top"
+    top.innerHTML = "Have your own feedback?"
+
+    var fdiv = document.createElement("div")
+    fdiv.id = "fdiv"
+
+    var namm = document.createElement("div")
+    namm.innerHTML = "<p id=" + '"' + "n" + '"' + ">Name:<p> <input type=" + '"' + "text" + '"' + "id= " + '"' + "searchn" + '"' + ">"
+
+    var age = document.createElement("div")
+    age.innerHTML = "<p id=" + '"' + "a" + '"' + ">Age:<p> <input type=" + '"' + "text" + '"' + "id= " + '"' + "searchm" + '"' + ">"
+
+    var feedback = document.createElement("div")
+    feedback.innerHTML = "<p id= " + '"' + "f" + '"' + ">Feedback:<p> <input type=" + '"' + "text" + '"' + "id= " + '"' + "searchf" + '"' + ">"
+
+    var stardiv = document.createElement("div")
+    stardiv.id = "stardiv"
+
+    var button = document.createElement("a")
+    button.classList.add("waves-effect", "waves-light", "btn", "centre-align", "white-text", "submit")
+    button.innerHTML = "Submit"
+    button.href = "#"
+    button.onclick = function arr() {
+
+        var arra = document.getElementById("searchn").value
+        var arrb = document.getElementById("searchm").value
+        var arrc = document.getElementById("searchf").value
+
+    }
+    var stars = [
+        { "name": "fivestar", "src": "pics/5star.png" },
+        { "name": "fourstar", "src": "pics/4star.png" },
+        { "name": "threestar", "src": "pics/3star.png" },
+        { "name": "twostar", "src": "pics/2star.png" },
+        { "name": "onestar", "src": "pics/1star.png" }]
+
+    fdiv.appendChild(top)
+    fdiv.appendChild(namm)
+    fdiv.appendChild(age)
+    fdiv.appendChild(feedback)
+
+    for (i = 0; i < 5; i++) {
+        var link = document.createElement("a")
+
+
+
+        link.href = "#!"
+
+        var star = document.createElement("img")
+        star.src = stars[i].src
+        star.classList.add("star")
+        star.id = stars[i].name
+        star.onclick =
+
+            link.appendChild(star)
+        stardiv.appendChild(link)
+
+
+    }
+
+
+
+
+    fdiv.appendChild(stardiv)
+
+    fdiv.appendChild(button)
+
+
+
+    document.querySelector("#holder").appendChild(fdiv)
+}
+
+
+function person() {
+    var structors = [{ "name": "John Doe", "src": "https://celebrityinsider.org/wp-content/uploads/2018/09/Kevin-Spacey-SABreakingNews.com_.jpeg", "car": "https://threebestrated.co.uk/images/KissDrivingSchool-Salisbury-UK.png", "quot": "If my grave appearance unnerves you, just imagine me in my DS 3.I feel that students get the best instruction by driving themselves,so they get practical experience.The lessons are likely to consist of 90% you on the road, and 10% me talking about what is ahead or reveiwing what we have done.", "brief": "John covers mostly sp2 postcodes in his 2012 DS 3. Heteaches manual and automatic lessons all throughout the week.With John you can expect to be driving on day one all the way through to your test.", "specs": "Car:2012 Citroen DS 3<br> Handling:Light <br> 0-60:10.3s <br> Top Speed:114 mph <br> Size:1.46m <br> Fuel:Petrol", "final": "To book a lesson with John: <br> Call:01722 453552 <br> Or email:JDoe@hotmail.co.uk" },]
+
+    var titlep = document.createElement("h1")
+    titlep.innerHTML = structors[0].name
+    titlep.classList.add("titlep")
+
+    var inst = document.createElement("img")
+    inst.src = structors[0].src
+    inst.classList.add("inst")
+
+    var car = document.createElement("img")
+    car.src = structors[0].car
+    car.classList.add("car")
+
+    var quot = document.createElement("p")
+    quot.innerHTML = structors[0].quot
+    quot.classList.add("quot")
+
+    var brief = document.createElement("p")
+    brief.innerHTML = structors[0].brief
+    brief.classList.add("brief")
+
+    var specs = document.createElement("p")
+    specs.innerHTML = structors[0].specs
+    specs.classList.add("specs")
+
+    var final = document.createElement("p")
+    final.innerHTML = structors[0].final
+    final.classList.add("final")
+
+    document.querySelector("#holder").appendChild(titlep)
+    document.querySelector("#holder").appendChild(inst)
+    document.querySelector("#holder").appendChild(car)
+    document.querySelector("#holder").appendChild(quot)
+    document.querySelector("#holder").appendChild(brief)
+    document.querySelector("#holder").appendChild(specs)
+    document.querySelector("#holder").appendChild(final)
 
 }
