@@ -763,6 +763,10 @@ function store() {
     ebook4.href = "#"
     ebook4.id = "ebook4"
 
+    var bottext = document.createElement("p")
+    bottext.innerHTML = "Digital Copies will result in a code being sent by email. Hardbacks should arrive with 2-4 business days. "
+    bottext.id = "bottext"
+
     document.querySelector("#holder").appendChild(titles)
     document.querySelector("#holder").appendChild(des)
     document.querySelector("#holder").appendChild(sub)
@@ -783,6 +787,36 @@ function store() {
     document.querySelector("#holder").appendChild(hardback4)
     document.querySelector("#holder").appendChild(ebook4)
 
+    document.querySelector("#holder").appendChild(bottext)
 
+
+}
+function places() {
+    var titlel = document.createElement("h1")
+    titlel.classList.add("titlep")
+    titlel.innerHTML = "Locations"
+
+    var map = document.createElement("img")
+    map.src = "pics/map.png"
+    map.id = "map"
+
+    var mapbox = document.createElement("div")
+    mapbox.id = "mapbox"
+
+    var mapboxhead = document.createElement("div")
+    mapboxhead.innerHTML = "Counties"
+    mapboxhead.id = "mapboxhead"
+
+    var counties = document.createElement("p")
+    counties.innerHTML = "Berkshire<br>Buckinghamshire<br>Devon<br>Dorset<br>East Midlands<br>Essex<br>Gloucestershire<br>Hampshire<br>Hertfordshire<br>Isle of Wight <br> Kent <br>London<br>Middlesex<br>Surrey <br>Wiltshire"
+    counties.classList.add("counties")
+
+    mapbox.appendChild(mapboxhead)
+    mapbox.appendChild(counties)
+
+
+    document.querySelector("#holder").appendChild(titlel)
+    document.querySelector("#holder").appendChild(map)
+    document.querySelector("#holder").appendChild(mapbox)
 
 }

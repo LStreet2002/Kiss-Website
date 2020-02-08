@@ -640,3 +640,32 @@ margin-left:4% !important;
     margin-right:4% !important;
     margin-left:63% !important;
 }
+#bottext {
+    color:#837f81;
+    text-align:center;
+    font-size:1.3rem;
+}
+#mapboxhead {
+    background-color:#81007f;
+    color:white;
+    font-size:2rem;
+    text-align:center;
+    
+    margin-top:5%;
+    border-radius:0.3rem;
+}
+#mapbox {
+    text-align:center;
+    background-color:#837f81;
+    margin-left:10%;
+    margin-right:10%;
+    line-height:3rem;
+    font-size:1.5rem;
+    border-radius:1rem;
+}
+#map {
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5%;
+    width:80%;
+}
