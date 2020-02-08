@@ -682,3 +682,107 @@ function person() {
     document.querySelector("#holder").appendChild(final)
 
 }
+function store() {
+    var titles = document.createElement("h1")
+    titles.classList.add("titlep")
+    titles.innerHTML = "Store"
+
+    var des = document.createElement("p")
+    des.id = "des"
+    des.innerHTML = "Kiss provides resources for both beginners and those seeking to become instructors. <br> Training resources can be ordered as digital copies or hardbacks."
+
+    var sub = document.createElement("h2")
+    sub.classList.add("subhe")
+    sub.innerHTML = "Learners"
+
+    var manual = document.createElement("img")
+    manual.src = "https://dqzrr9k4bjpzk.cloudfront.net/images/13124227/1156675358.jpg"
+    manual.id = "manual"
+
+    var automatic = document.createElement("img")
+    automatic.src = "https://dqzrr9k4bjpzk.cloudfront.net/images/13124227/931609114.jpg"
+    automatic.id = "automatic"
+
+    var hardback1 = document.createElement("a")
+    hardback1.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "hardback")
+    hardback1.innerHTML = "Hardback"
+    hardback1.href = "#"
+    hardback1.id = "hardback1"
+
+    var ebook1 = document.createElement("a")
+    ebook1.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "ebook")
+    ebook1.innerHTML = "E-book"
+    ebook1.href = "#"
+    ebook1.id = "ebook1"
+
+    var hardback2 = document.createElement("a")
+    hardback2.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "hardback")
+    hardback2.innerHTML = "Hardback"
+    hardback2.href = "#"
+    hardback2.id = "hardback2"
+
+    var ebook2 = document.createElement("a")
+    ebook2.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "ebook")
+    ebook2.innerHTML = "E-book"
+    ebook2.href = "#"
+    ebook2.id = "ebook2"
+
+    var sub2 = document.createElement("h2")
+    sub2.innerHTML = "Instructors"
+    sub2.classList.add("subhe")
+
+    var ibook = document.createElement("img")
+    ibook.src = "https://dqzrr9k4bjpzk.cloudfront.net/images/13124227/931609436.jpg"
+    ibook.id = "ibook"
+
+    var ibrief = document.createElement("img")
+    ibrief.src = "https://dqzrr9k4bjpzk.cloudfront.net/images/13124227/932987570.jpg"
+    ibrief.id = "ibrief"
+
+    var hardback3 = document.createElement("a")
+    hardback3.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "hardback")
+    hardback3.innerHTML = "Hardback"
+    hardback3.href = "#"
+    hardback3.id = "hardback3"
+
+    var ebook3 = document.createElement("a")
+    ebook3.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "ebook")
+    ebook3.innerHTML = "E-book"
+    ebook3.href = "#"
+    ebook3.id = "ebook3"
+
+    var hardback4 = document.createElement("a")
+    hardback4.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "hardback")
+    hardback4.innerHTML = "Hardback"
+    hardback4.href = "#"
+    hardback4.id = "hardback4"
+
+    var ebook4 = document.createElement("a")
+    ebook4.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "ebook")
+    ebook4.innerHTML = "E-book"
+    ebook4.href = "#"
+    ebook4.id = "ebook4"
+
+    document.querySelector("#holder").appendChild(titles)
+    document.querySelector("#holder").appendChild(des)
+    document.querySelector("#holder").appendChild(sub)
+    document.querySelector("#holder").appendChild(manual)
+    document.querySelector("#holder").appendChild(automatic)
+    document.querySelector("#holder").appendChild(hardback1)
+    document.querySelector("#holder").appendChild(ebook1)
+    document.querySelector("#holder").appendChild(hardback2)
+    document.querySelector("#holder").appendChild(ebook2)
+
+    document.querySelector("#holder").appendChild(sub2)
+    document.querySelector("#holder").appendChild(ibook)
+    document.querySelector("#holder").appendChild(ibrief)
+
+    document.querySelector("#holder").appendChild(hardback3)
+    document.querySelector("#holder").appendChild(ebook3)
+
+    document.querySelector("#holder").appendChild(hardback4)
+    document.querySelector("#holder").appendChild(ebook4)
+
+
+
+}
