@@ -513,6 +513,7 @@ function reviews() {
             function filter(f) {
                 var box = document.getElementById("reviewbox")
                 var r = box.getElementsByTagName("div");
+                //-----------------filter
 
                 var name = document.getElementsByClassName(f.target.id);
                 console.log(name)
@@ -545,7 +546,7 @@ function reviews() {
 
 
 
-
+    //-----------------------reviews scrollbox
     for (i = 0; i < 5; i++) {
         var box = document.createElement("div")
 
@@ -569,7 +570,7 @@ function reviews() {
 
     document.querySelector("#holder").appendChild(reviews)
 
-}
+}//------------------------ review adding
 function reviewadd() {
     var top = document.createElement("div")
     top.id = "top"
@@ -644,7 +645,7 @@ function reviewadd() {
     document.querySelector("#holder").appendChild(fdiv)
 }
 
-
+//----------------------------------instructor details
 function person() {
     var structors = [{ "name": "John Doe", "src": "https://celebrityinsider.org/wp-content/uploads/2018/09/Kevin-Spacey-SABreakingNews.com_.jpeg", "car": "https://threebestrated.co.uk/images/KissDrivingSchool-Salisbury-UK.png", "quot": "If my grave appearance unnerves you, just imagine me in my DS 3.I feel that students get the best instruction by driving themselves,so they get practical experience.The lessons are likely to consist of 90% you on the road, and 10% me talking about what is ahead or reveiwing what we have done.", "brief": "John covers mostly sp2 postcodes in his 2012 DS 3. Heteaches manual and automatic lessons all throughout the week.With John you can expect to be driving on day one all the way through to your test.", "specs": "Car:2012 Citroen DS 3<br> Handling:Light <br> 0-60:10.3s <br> Top Speed:114 mph <br> Size:1.46m <br> Fuel:Petrol", "final": "To book a lesson with John: <br> Call:01722 453552 <br> Or email:JDoe@hotmail.co.uk" },]
 
@@ -684,7 +685,7 @@ function person() {
     document.querySelector("#holder").appendChild(specs)
     document.querySelector("#holder").appendChild(final)
 
-}
+}//-----------------------------store page
 function store() {
     var titles = document.createElement("h1")
     titles.classList.add("titlep")
@@ -711,7 +712,7 @@ function store() {
     hardback1.innerHTML = "Hardback"
     hardback1.href = "#"
     hardback1.id = "hardback1"
-
+    //---------------hardback/ebook buttons
     var ebook1 = document.createElement("a")
     ebook1.classList.add("waves-effect", "waves-light", "btn", "left-align", "black-text", "ebook")
     ebook1.innerHTML = "E-book"
@@ -793,7 +794,7 @@ function store() {
     document.querySelector("#holder").appendChild(bottext)
 
 
-}
+}//--------------------------------locations page
 function places() {
     var titlel = document.createElement("h1")
     titlel.classList.add("titlep")
@@ -822,7 +823,7 @@ function places() {
     document.querySelector("#holder").appendChild(map)
     document.querySelector("#holder").appendChild(mapbox)
 
-}
+}//------------------------------contact page
 function contact() {
     var conbox = document.createElement("div")
     conbox.id = "conbox"
