@@ -894,6 +894,5 @@ function contact() {
     document.querySelector("#holder").appendChild(conbox)
     document.querySelector("#holder").appendChild(button)
 
-
-
 }
+

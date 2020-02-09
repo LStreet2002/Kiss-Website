@@ -709,3 +709,11 @@ font-size:1.6rem;
     display:flex;
     
 }
+.about {
+    text-align:center;
+    margin-left:10%;
+    margin-right:10%;
+}
+.group {
+    font-size:1.8rem;
+}
