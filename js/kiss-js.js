@@ -330,6 +330,9 @@ function people() {
 
 
 
+
+
+
 }
 //---------------------------name search box
 function searchname() {
@@ -655,7 +658,7 @@ function person() {
 
     var car = document.createElement("img")
     car.src = structors[0].car
-    car.classList.add("car")
+    car.classList.add("carim")
 
     var quot = document.createElement("p")
     quot.innerHTML = structors[0].quot
@@ -818,5 +821,78 @@ function places() {
     document.querySelector("#holder").appendChild(titlel)
     document.querySelector("#holder").appendChild(map)
     document.querySelector("#holder").appendChild(mapbox)
+
+}
+function contact() {
+    var conbox = document.createElement("div")
+    conbox.id = "conbox"
+
+    var titlec = document.createElement("h1")
+    titlec.classList.add("titlep")
+    titlec.innerHTML = "Contact Kiss"
+
+    var phon = document.createElement("p")
+    phon.innerHTML = "Phone: 07760 754517"
+    phon.id = "phon1"
+
+    var phon2 = document.createElement("p")
+    phon2.innerHTML = "(Monday-Saturday 09.00-17.00)"
+    phon2.id = "phon2"
+
+    var namec = document.createElement("p")
+    namec.innerHTML = "Name:"
+    namec.classList.add("namec")
+
+    var inputc = document.createElement("input")
+    inputc.classList.add("inputc")
+    inputc.type = "text"
+
+    var emailc = document.createElement("p")
+    emailc.innerHTML = "Email:"
+    emailc.classList.add("namec")
+
+    var inputd = document.createElement("input")
+    inputd.classList.add("inputc")
+
+    var phonec = document.createElement("p")
+    phonec.innerHTML = "Phone:"
+    phonec.classList.add("namec")
+
+    var inpute = document.createElement("input")
+    inpute.classList.add("inputc")
+
+    var messagec = document.createElement("p")
+    messagec.innerHTML = "Message:"
+    messagec.classList.add("namec")
+
+    var inputf = document.createElement("input")
+    inputf.classList.add("inputc")
+    inputf.id = "inputf"
+
+    var button = document.createElement("a")
+    button.classList.add("waves-effect", "waves-light", "btn", "centre-align", "white-text", "submit")
+    button.innerHTML = "Submit"
+    button.href = "#"
+
+    conbox.appendChild(titlec)
+    conbox.appendChild(phon)
+    conbox.appendChild(phon2)
+    namec.appendChild(inputc)
+    conbox.appendChild(namec)
+
+    emailc.appendChild(inputd)
+    conbox.appendChild(emailc)
+
+    phonec.appendChild(inpute)
+    conbox.appendChild(phonec)
+
+    messagec.appendChild(inputf)
+    conbox.appendChild(messagec)
+
+
+    document.querySelector("#holder").appendChild(conbox)
+    document.querySelector("#holder").appendChild(button)
+
+
 
 }

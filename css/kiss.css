@@ -536,7 +536,7 @@ margin-right:10%;
 display:inline;
    
 }
-.car {
+.carim {
     text-align:center;
     display:inline;
     margin-right:10%;
@@ -668,4 +668,44 @@ margin-left:4% !important;
     margin-right:10%;
     margin-top:5%;
     width:80%;
+}
+.fleet {
+    text-align:center;
+    margin-left:10%;
+     margin-right:10%;
+     font-size:1.4rem;
+}
+#conbox {
+    margin-left:10%;
+    margin-right:10%;
+}
+#phon1 {
+    text-align:center;
+    font-size:1.4rem;
+
+}
+#phon2 {
+    text-align:center;
+    color:#aeaeae;
+    font-size:1.4rem;
+}
+.namec {
+    margin-top:5rem;
+dislay:inline;
+text-align:left;
+font-size:1.6rem;
+}
+.inputc {
+    
+  
+    display:inline !important;
+    border:solid 0.3rem #81007f !important;
+    margin-left:8rem !important;
+    margin-right:10% !important;
+    margin-top:-2.4rem !important;
+}
+#inputf {
+    height:20vh;
+    display:flex;
+    
 }
